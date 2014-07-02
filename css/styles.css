@@ -1,28 +1,66 @@
 /* common */
 html, body {
 	height: 95%;
-	font: arial, helvetica, sans-serif;
+	font-size:14px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-style:normal;
+	font-weight:400;
+	color:#000;
 }
+
+a {
+	color: #E14C25;
+	}
+
+
+h3 {
+	margin-bottom: 0.5em;
+	text-transform:uppercase;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 1.65em;
+	}
+input[type="submit"] {
+	color: white; 
+    background-color: #e14c25; 
+    width: 100px; 
+    padding: 5px; 
+	margin: 10px;
+    text-align: center; 
+    font-style: bold; 
+    text-transform:uppercase; 
+    border: none; 
+    margin-top: 10px;
+	}
+	
+input[type="submit"]:hover {
+	opacity:0.75;
+	}
+
 .container {
 	height: 90%;
 	overflow: auto;
 	margin: auto;
-	border: 1px solid black;
+	padding: 10px;
+	border: 1px solid #AFAFAF;
 }
 .logout-link {
 	float: right;
-	padding-right: 3px;
+	padding: 3px;
 }
 .barnes-logo {
 	display: block;
-	margin: auto;
-	margin: 20px;
+	margin: 0 auto;
+	padding: 20px;
 }
 .navbar {
 	float: left;
 }
 .drexel-logo {
 	margin: 3px;
+	width: 65%;
+	height: 65%;
+	float: right;
 }
 .tabs-container {
 	padding: 3px;
@@ -32,29 +70,33 @@ html, body {
 }
 .active-tab, .inactive-tab {
 	position: relative;
-	border: 1px solid black;
+	border: 1px solid #AFAFAF;
 	padding: 3px;
 	margin-bottom: 1px;
 	border-right: none;
 }
 .active-tab>a, .inactive-tab>a {
 	text-decoration: none;
-	color: black;
+	color: white;
 }
 .active-tab {
 	left: 1px;
 	margin-left: -1px;
-	background-color: white;
+	background-color: #E14C25;
 }
 .inactive-tab {
-	background-color: gray;
+	background-color: #AFAFAF;
 }
 
 /* ensembles.php */
 .ensemble-container {
-	 border: 1px solid black;
+	 border: 1px solid #AFAFAF;
 	 padding: 3px;
 }
+.ensemble-user{
+	margin: 5px;
+}	
+
 .ensemble-table {
 	width: 100%;
 }
@@ -94,7 +136,7 @@ html, body {
 	top: -18px;
 	border-left: 15px solid transparent;
 	border-right: 15px solid transparent;
-	border-bottom: 15px solid #FFA500;
+	border-bottom: 15px solid #E14C25;
 	cursor: pointer;
 }
 .upvote-off {
@@ -104,7 +146,7 @@ html, body {
 	top: -18px;
 	border-left: 15px solid transparent;
 	border-right: 15px solid transparent;
-	border-bottom: 15px solid black;
+	border-bottom: 15px solid #AFAFAF;
 	cursor: pointer;
 }
 .upvote-mine {
@@ -125,9 +167,9 @@ html, body {
 	cursor: pointer;
 }
 .awardedBadge {
-	-moz-box-shadow: 0 0 20px #ff8c00;
-	-webkit-box-shadow: 0 0 20px #ff8c00;
-	box-shadow: 0px 0px 20px #ff8c00;
+	-moz-box-shadow: 0 0 20px #EFCE61;
+	-webkit-box-shadow: 0 0 20px #EFCE61;
+	box-shadow: 0px 0px 20px #EFCE61;
 }
 
 /* login.php */
@@ -148,6 +190,8 @@ html, body {
 }
 .google-login {
 	background-image: url(http://www.google.com/favicon.ico);
+	margin: 0 auto;
+
 }
 .yahoo-login {
 	background-image: url(http://www.yahoo.com/favicon.ico);
@@ -159,12 +203,26 @@ html, body {
 	background: url(http://wiki.openid.net/f/openid-16x16.gif) left no-repeat;
 	padding-left: 17px;
 }
+.form-input {
+	border:1px solid #ccc;
+	border-top:1px solid #aaa;
+	padding:2px 5px 1px;
+	color:#aaa49f;
+	font-size: 1.1em;
+}
+
 
 /* user.php */
 .ensembles-header, .badges-header {
-	margin-bottom: 0px;
+	margin-bottom: 10px;
 	margin-left: 3px;
 }
+
+.user-badge-table {
+	border-bottom: 1px solid #AFAFAF;
+	padding-bottom: 20px;
+}
+
 .user-badge-table, .user-ensembles-table {
 	width: 66%;
 }
@@ -172,31 +230,40 @@ html, body {
 }
 .ensemble-cell, .badge-cell {
 	display: inline-block;
-	border: 1px solid black;
-	padding: 3px;
+	border: 1px solid #AFAFAF;
+	padding: 8px;
 	margin-left: 3px;
 	margin-bottom: 3px;
 	text-align: center;
+	width: 160px;
 }
 .ensemble-image-thumbnail, .badge-image {
 	width: 100%;
 	max-width: 128px;
 	height: 100%;
 	max-height: 128px;
+	padding: 5px;
 }
 .badge-title {
 	font-weight: bold;
 }
 .badge-description {
 	font-style: italic;
+	display: none;
 }
 .user-header {
 	text-align: center;
+	display: none;
 }
 .user-avatar {
 	width: 128px;
 	height: 128px;
-	border: 1px solid black;
+	border: 1px solid #AFAFAF;
+	background-color: #AFAFAF;
+	color: #AFAFAF;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: block;
 }
 .badge-checklist>ul {
 	padding: 0px;
@@ -251,7 +318,7 @@ li {
 	border-top-left-radius: 8px;
 	border-bottom-left-radius: 8px;
 	*/
-	background-color: rgb(43, 194, 83);
+	background-color: #E14C25;
 	/* background-color: rgb(255, 127, 0); */
 	/*
 	background-image: -webkit-gradient(
