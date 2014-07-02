@@ -1,6 +1,7 @@
 /* common */
 html, body {
 	height: 95%;
+	font: arial, helvetica, sans-serif;
 }
 .container {
 	height: 90%;
