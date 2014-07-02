@@ -1,0 +1,302 @@
+/* common */
+html, body {
+	height: 95%;
+}
+.container {
+	height: 90%;
+	overflow: auto;
+	margin: auto;
+	border: 1px solid black;
+}
+.logout-link {
+	float: right;
+	padding-right: 3px;
+}
+.barnes-logo {
+	display: block;
+	margin: auto;
+	margin: 20px;
+}
+.navbar {
+	float: left;
+}
+.drexel-logo {
+	margin: 3px;
+}
+.tabs-container {
+	padding: 3px;
+	margin: 3px;
+	margin-right: 0px;
+	padding-right: 0px;
+}
+.active-tab, .inactive-tab {
+	position: relative;
+	border: 1px solid black;
+	padding: 3px;
+	margin-bottom: 1px;
+	border-right: none;
+}
+.active-tab>a, .inactive-tab>a {
+	text-decoration: none;
+	color: black;
+}
+.active-tab {
+	left: 1px;
+	margin-left: -1px;
+	background-color: white;
+}
+.inactive-tab {
+	background-color: gray;
+}
+
+/* ensembles.php */
+.ensemble-container {
+	 border: 1px solid black;
+	 padding: 3px;
+}
+.ensemble-table {
+	width: 100%;
+}
+.ensemble-container {
+	display: inline-block;
+	text-align: center;
+	margin-bottom: 3px;
+	margin-left: 3px;
+}
+.pagination-container {
+	text-align: center;
+}
+.pagination-page, .pagination-jump, .pagination-skip {
+	display: inline;
+}
+.pagination-link {
+	text-decoration: none;
+}
+.ensembles-header, .ensembles-user-header {
+	margin-bottom: 0px;
+	margin-left: 3px;
+}
+.ensembles-header {
+	margin-top: 0px;
+}
+.ensemble-image {
+	width: 100%;
+	height: 100%;
+}
+.upvote-container {
+	margin: 3px;
+}
+.upvote-on {
+	width: 0; 
+	height: 0;
+	position: relative;
+	top: -18px;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 15px solid #FFA500;
+	cursor: pointer;
+}
+.upvote-off {
+	width: 0; 
+	height: 0;
+	position: relative;
+	top: -18px;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 15px solid black;
+	cursor: pointer;
+}
+.upvote-mine {
+	width: 0; 
+	height: 0;
+	position: relative;
+	top: -18px;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 15px solid #98fb98;
+	cursor: pointer;
+}
+.upvote-badge > img {
+	height: 50px;
+	width: 50px;
+	border: 1px solid black;
+	margin: 3px;
+	cursor: pointer;
+}
+.awardedBadge {
+	-moz-box-shadow: 0 0 20px #ff8c00;
+	-webkit-box-shadow: 0 0 20px #ff8c00;
+	box-shadow: 0px 0px 20px #ff8c00;
+}
+
+/* login.php */
+.form-container {
+	text-align: center;
+}
+.invalid-login-msg {
+	color: red;
+}
+.login {
+	background-position:  0px 0px;
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+	height: 32px;
+	width: 32px;
+	border: 0px;
+	cursor: pointer;
+}
+.google-login {
+	background-image: url(http://www.google.com/favicon.ico);
+}
+.yahoo-login {
+	background-image: url(http://www.yahoo.com/favicon.ico);
+}
+.aol-login {
+	background-image: url(http://www.aol.com/favicon.ico);
+}
+#other-op {
+	background: url(http://wiki.openid.net/f/openid-16x16.gif) left no-repeat;
+	padding-left: 17px;
+}
+
+/* user.php */
+.ensembles-header, .badges-header {
+	margin-bottom: 0px;
+	margin-left: 3px;
+}
+.user-badge-table, .user-ensembles-table {
+	width: 66%;
+}
+.badge-checklist {
+}
+.ensemble-cell, .badge-cell {
+	display: inline-block;
+	border: 1px solid black;
+	padding: 3px;
+	margin-left: 3px;
+	margin-bottom: 3px;
+	text-align: center;
+}
+.ensemble-image-thumbnail, .badge-image {
+	width: 100%;
+	max-width: 128px;
+	height: 100%;
+	max-height: 128px;
+}
+.badge-title {
+	font-weight: bold;
+}
+.badge-description {
+	font-style: italic;
+}
+.user-header {
+	text-align: center;
+}
+.user-avatar {
+	width: 128px;
+	height: 128px;
+	border: 1px solid black;
+}
+.badge-checklist>ul {
+	padding: 0px;
+	list-style-type: none;
+}
+li {
+	list-style-type: none;
+}
+.badge-check-on:before {
+	font-size: 1.25em;
+	font-weight: bold;
+	cursor: default;
+	content: "\2611";
+}
+.badge-check-off:before {
+	font-size: 1.25em;
+	font-weight: bold;
+	cursor: default;
+	content: "\2610";
+}
+.meter { 
+	height: 15px;
+	position: relative;
+	background: #555;
+	/*
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	*/
+	padding: 3px;
+	margin: 3px;
+	/*
+	-webkit-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+	-moz-box-shadow   : inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+	box-shadow        : inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+	*/
+}
+.meter > span {
+	display: block;
+	height: 100%;
+	/*
+	-webkit-border-top-right-radius: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+	-moz-border-radius-topright: 0px;
+	-moz-border-radius-bottomright: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	*/
+	background-color: rgb(43, 194, 83);
+	/* background-color: rgb(255, 127, 0); */
+	/*
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, rgb(43, 194, 83)),
+		color-stop(1, rgb(84, 240, 84))
+	);
+	background-image: -webkit-linear-gradient(
+		center bottom,
+		rgb(43, 194, 83) 37%,
+		rgb(84, 240, 84) 69%
+	);
+	background-image: -moz-linear-gradient(
+		center bottom,
+		rgb(43, 194, 83) 37%,
+		rgb(84, 240, 84) 69%
+	);
+	background-image: -ms-linear-gradient(
+		center bottom,
+		rgb(43, 194, 83) 37%,
+		rgb(84, 240, 84) 69%
+	);
+	background-image: -o-linear-gradient(
+		center bottom,
+		rgb(43, 194, 83) 37%,
+		rgb(84, 240, 84) 69%
+	);
+	-webkit-box-shadow: 
+		inset 0 2px 9px  rgba(255, 255, 255, 0.3),
+		inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 
+		inset 0 2px 9px  rgba(255, 255, 255, 0.3),
+		inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+	*/
+	position: relative;
+	overflow: hidden;
+}
+.meter > span.filled {
+	/*
+	-webkit-border-top-right-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	-moz-border-radius-topright: 8px;
+	-moz-border-radius-bottomright: 8px;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	*/
+}
