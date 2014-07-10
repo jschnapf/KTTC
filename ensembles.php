@@ -102,9 +102,13 @@ header("Expires: Sat, 26 Jul 1997 05:00:00 GMT");
 				<a href="help.php"><div>Help</div></a>
 			</div>
 		</div>
+        
+    <!-- DREXEL LOGO AND LINK
 		<a href="http://www.drexel.edu">
 			<img id="drexel-logo" class="drexel-logo" alt="Drexel University" title="Drexel University" src="http://drexel.edu/~/media/Images/test/edTest/thinking-forward/ui/drexel-logo.jpg">
 		</a>
+     -->
+        
 	</div>
 	
 	<div id="container" class="container">
@@ -205,14 +209,14 @@ header("Expires: Sat, 26 Jul 1997 05:00:00 GMT");
 	}
 ?>
 					<a id="badge-1-<?php echo($ensembleId); ?>" title="Award the Creative Genius Badge" href="<?php echo($badgeUrl1); ?>" onclick="<?php echo($badgeOnclick1); ?>" class="upvote-badge badge1">
-						<img class="<?php echo($badgeClass1); ?>" src="https://keystothecollection.com/sites/default/files/creativeGenius_badge.png"></a>
+						<img class="<?php echo($badgeClass1); ?>" src="https://keystothecollection.com/sites/default/files/CreativeGenius_0.png"></a>
 					<a id="badge-2-<?php echo($ensembleId); ?>" title="Award the Hang It Up Badge" href="<?php echo($badgeUrl2); ?>" onclick="<?php echo($badgeOnclick2); ?>" class="upvote-badge badge2">
-						<img class="<?php echo($badgeClass2); ?>" src="https://keystothecollection.com/sites/default/files/hangitUp_badge.png"></a>
+						<img class="<?php echo($badgeClass2); ?>" src="https://keystothecollection.com/sites/default/files/HangItUp_0.png"></a>
 					<a id="upvote-button-<?php echo($ensembleId); ?>" title="<?php echo($upvoteTitle); ?>" href="<?php echo($upvoteUrl); ?>" onclick="return upvote(<?php echo($ensembleId); ?>)" class="<?php echo($upvoteClass); ?>"></a>
 					<a id="badge-3-<?php echo($ensembleId); ?>" title="Award the Love It! Badge" href="<?php echo($badgeUrl3); ?>" onclick="<?php echo($badgeOnclick3); ?>" class="upvote-badge badge3">
-						<img class="<?php echo($badgeClass3); ?>" src="https://keystothecollection.com/sites/default/files/loveIt_badge.png"></a>
+						<img class="<?php echo($badgeClass3); ?>" src="https://keystothecollection.com/sites/default/files/LoveIt_0.png"></a>
 					<a id="badge-4-<?php echo($ensembleId); ?>" title="Award the Master Maker Badge" href="<?php echo($badgeUrl4); ?>" onclick="<?php echo($badgeOnclick4); ?>" class="upvote-badge badge4">
-						<img class="<?php echo($badgeClass4); ?>" src="https://keystothecollection.com/sites/default/files/masterMaker_badge.png"></a>
+						<img class="<?php echo($badgeClass4); ?>" src="https://keystothecollection.com/sites/default/files/MasterMaker_0.png"></a>
 <?php endif; // ensemble belongs to current user ?>
 				</div>
 <?php endif; // logged in ?>

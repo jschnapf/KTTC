@@ -40,9 +40,13 @@ header("Expires: Sat, 26 Jul 1997 05:00:00 GMT");
 				<a href=""><div>Help</div></a>
 			</div>
 		</div>
+		
+            <!-- DREXEL LOGO AND LINK
 		<a href="http://www.drexel.edu">
 			<img id="drexel-logo" class="drexel-logo" alt="Drexel University" title="Drexel University" src="http://drexel.edu/~/media/Images/test/edTest/thinking-forward/ui/drexel-logo.jpg">
 		</a>
+     -->
+        
 	</div>
 	
 	<div id="container" class="container">
@@ -53,7 +57,7 @@ header("Expires: Sat, 26 Jul 1997 05:00:00 GMT");
 			<a href="login.php">Log In</a>
 <?php endif; ?>
 		</div>
-		This is the help page
+		&nbsp; 
 	</div>
 </body>
 </html>

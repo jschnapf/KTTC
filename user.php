@@ -51,9 +51,13 @@ if ($profile):
 				<a href="help.php"><div>Help</div></a>
 			</div>
 		</div>
+        
+    <!-- DREXEL LOGO AND LINK
 		<a href="http://www.drexel.edu">
 			<img id="drexel-logo" class="drexel-logo" alt="Drexel University" title="Drexel University" src="http://drexel.edu/~/media/Images/test/edTest/thinking-forward/ui/drexel-logo.jpg">
 		</a>
+     -->
+        
 	</div>
 	
 	<div id="container" class="container">
@@ -67,7 +71,7 @@ if($profile['picture']): // user has avatar picture
 ?>
 				<img id="user-avatar" class="user-avatar" alt="User Avatar" src="<?php echo($pictureURL); ?>">
 <?php else: // user doesn't have avatar picture ?>
-				<img id="user-avatar" class="user-avatar" alt="User Avatar" src="http://www.macgasm.net/wp-content/plugins/all-in-one-seo-pack-pro/images/default-user-image.png">
+				<img id="user-avatar" class="user-avatar" alt="User Avatar" src="http://www.barnesfoundation.org/assets/public/images/content/default-user-kttc.png">
 <?php endif; // user has avatar picture ?>
 			</div>
 			<div id="badge-checklist" class="badge-checklist">

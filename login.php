@@ -513,9 +513,13 @@ header("Expires: Sat, 26 Jul 1997 05:00:00 GMT");
 	</a>
 	
 	<div id="navbar" class="navbar">
+        
+		    <!-- DREXEL LOGO AND LINK
 		<a href="http://www.drexel.edu">
 			<img id="drexel-logo" class="drexel-logo" alt="Drexel University" title="Drexel University" src="http://drexel.edu/~/media/Images/test/edTest/thinking-forward/ui/drexel-logo.jpg">
 		</a>
+     -->
+        
 	</div>
 	
 	<div id="form-container" class="container form-container">
