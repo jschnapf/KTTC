@@ -96,9 +96,9 @@ usort($badgeList, function ($badge1, $badge2) {
 });
 ?>
 <?php if ($uid === $user->uid): // current user ?>
-				You are <?php echo($percentComplete); ?>% complete the game.
+				You are <?php echo($percentComplete); ?>% complete.
 <?php else: // not current user ?>
-				This user is <?php echo($percentComplete); ?>% complete the game.
+				This user is <?php echo($percentComplete); ?>% complete.
 <?php endif; // current user ?>
 				<div class="meter">
 					<span <?php echo($percentComplete > 95 ? 'class="filled" ' : ''); ?>style="width: <?php echo($percentComplete); ?>%"></span>
